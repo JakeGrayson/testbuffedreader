@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.io.FileReader;
+import java.io.BufferedReader;  
+public class Advice {  
+    public static void main(String args[]){    
+           try{    
+             BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Downloads\\SESSION 20222023 SEMESTER I\\ADVANCE PROGRAMMING\\Group Assignment\\Group Assignment Official\\question 1.txt"));    
+             String line;
+             while((line = reader.readLine()) != null){
+             	System.out.println(line);
+             }
+             System.out.println(reader.readLine());
+             reader.close();
+            }catch(IOException e){
+            	e.printStackTrace();
+            }    
+      }    
+}
